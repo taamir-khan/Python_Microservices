@@ -9,7 +9,7 @@ curl -d '{ "first_name": "first_name", "code" : "code_sent_to_phone" }' -X POST 
 
 user_path_auth:
 ```bash
-curl -d '{ "username": "username1", "password" : "password1" }' -X POST http://localhost:9003/verify -H "Content-type: application/json"
+curl -d '{ "username": "username1", "password" : "password1" }' -X POST http://localhost:9001/verify -H "Content-type: application/json"
 ```
 
 emailcheck:
