@@ -2,6 +2,12 @@
 
 How to run each microservice
 
+Install docker-compose
+```bash
+docker-compose up --build
+```
+Then change directory to one of the following microservices and run ``app.py``
+
 two_factor:
 ```bash
 curl -d '{ "first_name": "first_name", "code" : "code_sent_to_phone" }' -X POST http://localhost:9003/authorize -H "Content-type: application/json"
