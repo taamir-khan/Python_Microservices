@@ -10,6 +10,8 @@ Then change directory to one of the following microservices and run ``app.py``
 
 If you experience an issue running ``app.py`` with docker-compose active, then it may be best to test without docker-compose
 
+Once ``app.py`` starts a flask instance, open a new terminal anf run one of the corresponding commands:
+
 password:
 ```bash
 curl -d '{ "password" : "xxxxxxxx" }' -X POST http://localhost:9001/check  -H "Content-type: application/json"
