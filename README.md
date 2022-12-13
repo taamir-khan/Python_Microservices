@@ -8,9 +8,11 @@ docker-compose up --build
 ```
 Then change directory to one of the following microservices and run ``app.py``
 
-two_factor:
+If you experience an issue running ``app.py`` with docker-compose active, then it may be best to test without docker-compose
+
+password:
 ```bash
-curl -d '{ "first_name": "first_name", "code" : "code_sent_to_phone" }' -X POST http://localhost:9003/authorize -H "Content-type: application/json"
+curl -d '{ "password" : "xxxxxxxx" }' -X POST http://localhost:9001/check  -H "Content-type: application/json"
 ```
 
 user_path_auth:
